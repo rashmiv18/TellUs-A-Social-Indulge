@@ -6,5 +6,5 @@ export const PostValidation = z.object ({
 })
 
 export const CommentValidation = z.object ({
-    post: z.string().url().nonempty().min(3, {message: 'Minimum 3 charcaters'}),
+    post: z.string().nonempty().min(3, {message: 'Minimum 3 charcaters'}),
 })

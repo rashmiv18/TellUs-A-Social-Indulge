@@ -170,7 +170,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
           render={({ field }) => (
             <FormItem className="flex flex-col w-full gap-3">
               <FormLabel className="text-base-semibold text-light-2">
-                username
+                Username(What you want to be called)
               </FormLabel>
               <FormControl>
                 <Input
@@ -191,7 +191,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
           render={({ field }) => (
             <FormItem className="flex flex-col w-full gap-3">
               <FormLabel className="text-base-semibold text-light-2">
-                Bio
+                Bio(Tell something about yourself)
               </FormLabel>
               <FormControl>
                 <Textarea
