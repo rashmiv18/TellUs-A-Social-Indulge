@@ -69,7 +69,7 @@ function Post({ userId }: { userId: string }) {
                             <FormLabel className="text-base-semibold text-light-1">
                                 Content
                             </FormLabel>
-                            <FormControl className="no-focus border border-dark-4 bg-dark-3 text-light-2">
+                            <FormControl className="no-focus border border-dark-4 bg-dark-2 text-light-2">
                                 <Textarea
                                     rows={15}
                                     {...field}
