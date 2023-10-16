@@ -45,7 +45,7 @@ function Post({ userId }: { userId: string }) {
         }
     })
 
-    const onSubmit =async (values: z.infer<typeof PostValidation>) =>{
+    const onSubmit = async (values: z.infer<typeof PostValidation>) =>{
         await CreatePost({ 
             text: values.post,
             author: userId,

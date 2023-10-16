@@ -41,7 +41,7 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
 const skipAmount = (pageNumber - 1)* pageSize;
 
     const postsQuery = Post.find({ parentId: { $in: [null,undefined]}})
-    .sort({ createdAt: 'asc' })
+    .sort({ createdAt: 'desc' })
     .skip(skipAmount)
     .limit(pageSize)
     .populate({ path: 'author', model: User })
