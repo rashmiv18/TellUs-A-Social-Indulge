@@ -1,5 +1,5 @@
 import ProfileHeader from "@/components/shared/ProfileHeader";
-import { fetchUser, fetchUsers, getActivity } from "@/lib/actions/user.actions";
+import { fetchUser, getActivity } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
