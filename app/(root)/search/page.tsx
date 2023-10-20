@@ -1,6 +1,3 @@
-
-
-
 import ProfileHeader from "@/components/shared/ProfileHeader";
 import { fetchUser, fetchUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
