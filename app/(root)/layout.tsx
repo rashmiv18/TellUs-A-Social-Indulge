@@ -30,7 +30,7 @@ export default function RootLayout({
           <main className="flex flex-row">
             <LeftSidebar />
 
-            <section className="main-container bg-dark-1">
+            <section className="main-container bg-gradient-to-br from-gray-700 to-black-500">
               <div className="w-full max-w-4xl">
                 {children}
               </div>
