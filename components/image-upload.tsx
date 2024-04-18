@@ -8,7 +8,7 @@ export const ImageUpload = () => {
  const [imageUrl, setImageUrl] = useState<string>('')
   return (
     <div>
-    <UploadDropzone endpoint='imageUploader' 
+    <UploadDropzone endpoint='media' 
     onClientUploadComplete={(res) => {
       console.log("Files: ", res);
       alert("Upload Completed");
