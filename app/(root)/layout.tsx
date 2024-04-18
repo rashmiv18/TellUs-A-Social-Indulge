@@ -8,7 +8,7 @@ import LeftSidebar from '@/components/shared/LeftSidebar'
 
 import Bottombar from '@/components/shared/Bottombar'
 import RightSidebar from '@/components/shared/RightSidebar'
-
+import "@uploadthing/react/styles.css";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
