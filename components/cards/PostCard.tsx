@@ -73,14 +73,14 @@ function PostCard({
 
             <p className="mt-2 text-small-regular text-light-2">{content}</p>
 
-            <div className="flex justify-center items-center h-full">
+            <div className="flex h-full">
               {imageLink && (
                 <div className="p-2 border-black rounded-lg">
                   <Image
                     src={imageLink}
                     alt="Image Url"
-                    width={400}
-                    height={200}
+                    width={500}
+                    height={400}
                     className="rounded-md hover:scale-105 transition-transform duration-300"
                   />
                 </div>
