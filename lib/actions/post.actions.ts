@@ -50,12 +50,13 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
 
 interface Params {
   text: string,
+  imageLink: string,
   author: string,
   communityId: string | null,
   path: string,
 }
 
-export async function CreatePost({ text, author, communityId, path }: Params) {
+export async function CreatePost({ text, imageLink, author, communityId, path }: Params) {
   try {
     connectToDB();
 
@@ -66,6 +67,7 @@ export async function CreatePost({ text, author, communityId, path }: Params) {
 
     const createdPost = await Post.create({
       text,
+      imageLink,
       author,
       community: communityIdObject, // Assign communityId if provided, or leave it null for personal account
     });

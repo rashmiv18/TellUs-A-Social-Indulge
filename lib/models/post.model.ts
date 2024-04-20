@@ -2,6 +2,9 @@ import mongoose from 'mongoose';
 
 const postSchema = new mongoose.Schema({
     text: {type: String, required: true},
+    imageLink: {
+        type: String,
+    },
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',

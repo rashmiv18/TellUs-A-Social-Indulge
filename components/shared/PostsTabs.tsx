@@ -18,7 +18,6 @@ const PostsTab = async ({ currentUserId, accountId, accountType }:
         result = await fetchUserPosts(accountId);
     }
 
-
     if (!result) redirect('/')
 
     return (
@@ -30,6 +29,7 @@ const PostsTab = async ({ currentUserId, accountId, accountType }:
                     currentUserId={currentUserId}
                     parentId={post.parentId}
                     content={post.text}
+                    imageLink={post.imageLink}
                     author={
                         accountType === 'User'
                             ? { name: result.name, image: result.image, id: result.id } :

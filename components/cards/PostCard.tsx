@@ -10,6 +10,7 @@ interface Props {
   currentUserId: string;
   parentId: string | null;
   content: string;
+  imageLink: string;
   author: {
     name: string;
     image: string;
@@ -34,12 +35,14 @@ function PostCard({
   currentUserId,
   parentId,
   content,
+  imageLink,
   author,
   community,
   createdAt,
   comments,
   isComment,
 }: Props) {
+  console.log("Url =" , imageLink);
   return (
     <article
       className={`flex w-full flex-col rounded-xl ${
@@ -69,6 +72,15 @@ function PostCard({
             </Link>
 
             <p className='mt-2 text-small-regular text-light-2'>{content}</p>
+
+
+            <Image
+                    src={imageLink}
+                    alt='Image Url'
+                    width={400}
+                    height={400}
+                    >
+            </Image>
 
             <div className={`${isComment && "mb-10"} mt-5 flex flex-col gap-3`}>
               <div className='flex gap-3.5'>

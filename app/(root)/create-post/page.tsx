@@ -14,10 +14,7 @@ async function Page() {
     if(!userInfo?.onboarded) redirect('/onboarding');
     return(
         <>
-        
         <h1 className="head-text">Create Post</h1>
-        <h1 className="text-base-semibold text-light-1">Photo</h1>
-        <ImageUpload />
         <CreatePost userId={userInfo._id}/>
         </> 
     )
