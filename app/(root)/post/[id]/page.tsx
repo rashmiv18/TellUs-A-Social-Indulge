@@ -1,5 +1,4 @@
 import PostCard from "@/components/cards/PostCard";
-import { fetchPosts } from "@/lib/actions/post.actions";
 import { currentUser } from "@clerk/nextjs";
 import { fetchPostById } from "@/lib/actions/post.actions";
 import { fetchUser } from "@/lib/actions/user.actions";
