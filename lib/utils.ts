@@ -14,7 +14,6 @@ export function isBase64Image(imageData: string) {
 
 // created by chatgpt
 export function formatDateString(dateString: string) {
-  
   if (!dateString) {
     return "Invalid Date: Date string is empty";
   }
@@ -29,16 +28,13 @@ export function formatDateString(dateString: string) {
     year: "numeric",
     month: "short",
     day: "numeric",
-  };
-
-  const formattedDate = date.toLocaleDateString(undefined, options);
-
-  const time = date.toLocaleTimeString([], {
     hour: "numeric",
     minute: "2-digit",
-  });
+  };
 
-  return `${time} - ${formattedDate}`;
+  const formattedDateTime = date.toLocaleString(undefined, options);
+
+  return formattedDateTime;
 }
 
 

@@ -74,18 +74,19 @@ function PostCard({
             <p className="mt-2 text-small-regular text-light-2">{content}</p>
 
             <div className="flex h-full">
-              {imageLink && (
-                <div className="p-2 border-black rounded-lg">
-                  <Image
-                    src={imageLink}
-                    alt="Image Url"
-                    width={500}
-                    height={400}
-                    className="rounded-md hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              )}
-            </div>
+  {imageLink && (
+    <div className="p-2 border-black rounded-lg">
+      <Image
+        src={imageLink}
+        alt="Image Url"
+        width={500}
+        height={400}
+        className="rounded-md hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+  )}
+</div>
+
 
 
             <div className={`${isComment && "mb-10"} mt-5 flex flex-col gap-3`}>
