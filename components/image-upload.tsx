@@ -4,6 +4,9 @@ import { useState } from "react";
 import { UploadDropzone } from "@/src/utils/uploadthing";
 import Image from "next/image";
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 interface ImageUploadProps {
   onImageUpload: (imageUrl: string) => void;
 }
@@ -17,7 +20,10 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onImageUpload }) => {
         endpoint="imageUploader"
         onClientUploadComplete={(res) => {
           console.log("Files: ", res);
-          alert("Upload Completed");
+          toast.success("Upload Completed", {
+            position: "top-center",
+            autoClose: 2000, // Adjust as needed
+          });
           setImageUrl(res[0].url);
           onImageUpload(res[0].url);
         }}

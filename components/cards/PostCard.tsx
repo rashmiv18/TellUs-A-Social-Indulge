@@ -71,7 +71,8 @@ function PostCard({
               </h4>
             </Link>
 
-            <p className="mt-2 text-small-regular text-light-2">{content}</p>
+            <p className="mt-2 mb-5 text-small-regular text-light-2">{content}</p>
+
 
             <div className="flex h-full">
   {imageLink && (
